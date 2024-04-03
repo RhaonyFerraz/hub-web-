@@ -511,3 +511,25 @@ section#redes-sociais img:hover {
     box-shadow: 5px 5px 10px rgb(38,188,249);
     transition: transform 0.5s;
 }
+#iconeFixo {
+    position: fixed;
+    right: 20px; /* Posição do ícone a partir da borda esquerda da janela */
+    bottom: 20px; /* Posição do ícone a partir da borda inferior da janela */
+    z-index: 9999; /* Certifica-se de que o ícone está acima de outros elementos */
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .pulsing {
+    animation: pulse 2s infinite;
+  }
