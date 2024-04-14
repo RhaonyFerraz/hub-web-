@@ -5,9 +5,70 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: white;
+}
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section.module:last-child{
+    margin-bottom;
+}
+
+section.module h2{
+    margin: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh  !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-backgroud-size: cover;
+    -moz-background-size: cover;
 
 
 }
+
+section.module.parallax-1{
+    background-image: url(https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 img{
     max-width: 100%;
@@ -32,7 +93,8 @@ img{
     z-index: 10;
 }
 
-.logo-text{
+
+.logo-text {
     text-transform: uppercase;
     background-color: rgb(189, 192, 193);
     font-size: 24px;
@@ -45,7 +107,31 @@ img{
     float: left;
     text-align: right;
     border-radius: 5px;
-}
+    animation: changeColor 12s infinite;
+  }
+
+  @keyframes changeColor {
+    0% { background-color: rgba(25, 215, 236, 0.648); }
+    5.55% { background-color: rgba(57, 172, 244, 0.799); }
+    11.11% { background-color: rgba(100, 135, 239, 0.799); }
+    16.66% { background-color: rgba(127, 110, 234, 0.79); }
+    22.22% { background-color: rgba(145, 94, 228, 0.795); }
+    27.77% { background-color: rgba(175, 70, 227, 0.772); }
+    33.33% { background-color: rgba(120, 45, 158, 0.772); }
+    38.88% { background-color: rgba(142, 41, 139, 0.813); }
+    44.44% { background-color: rgba(223, 28, 217, 0.813); }
+    50% { background-color:    rgba(142, 41, 139, 0.813); }
+    55.55% { background-color: rgba(120, 45, 158, 0.772); }
+    61.11% { background-color: rgba(175, 70, 227, 0.772); }
+    66.66% { background-color: rgba(145, 94, 228, 0.795); }
+    72.22% { background-color: rgba(127, 110, 234, 0.79); }
+    77.77% { background-color: rgba(100, 135, 239, 0.799); }
+    83.33% { background-color: rgba(57, 172, 244, 0.799); }
+    88.88% { background-color: rgba(25, 215, 236, 0.648); }
+    100% { background-color: rgba(25, 215, 236, 0.648); } /* Repetição da primeira cor */
+  }
+
+
 
 .header__nav{
     clear: left;
@@ -63,9 +149,9 @@ img{
 }
 .header__nav li {
     list-style-type: none;
-    background: rgb(149,92,230);
+    background: #7b3773;
     text-align: center;
-    border-bottom: 1px dotted rgba(255,255,255, 0.2);
+    border-bottom: 1px dotted rgb(0, 0, 0);
 
 
 
@@ -87,7 +173,7 @@ img{
 
 }
 .header__nav a:hover {
-    color: rgb(38,188,249);
+    color: rgb(50, 10, 151);
 
 
 }
@@ -266,7 +352,7 @@ img{
     font-weight: 600;
     text-transform: uppercase;
     /* Adicionando o código do botão */
-    background-color: rgb(38, 188, 249);
+    background-color: rgb(57, 100, 150);
     cursor: pointer;
 
 
@@ -278,13 +364,13 @@ img{
 }
 
 .hero__btn:hover {
-    background-color: rgb(226, 25, 217);
+    background-color: #7b3773;
 }
 
 
 
 .people-cards{
-    margin-top: 2.5em;
+    margin-top: -100px;
 }
 
 .people-cards__card{
@@ -360,7 +446,7 @@ img{
     background-color: #929da5;
 }
 .button-primary{
-    background-color: rgb(226,25,217);
+    background-color: #7b3773;
     color: white;
 }
 .button-secundary{
@@ -371,7 +457,7 @@ img{
 
 
 .last-articles__title{
-    background-color: rgb(149,92,230);
+    background-color: #7b3773;
     padding: 5px 0;
 }
 
@@ -387,7 +473,7 @@ img{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 0;
-    background: rgb(255, 255, 0);
+    background: rgb(57, 100, 150);
 
 
 }
@@ -416,7 +502,7 @@ img{
 .quote-container{
     background-color: #454e51;
     padding: 50px 0;
-    border-bottom: 12px solid rgb(226,25,217);
+    border-bottom: 12px solid #7b3773;
     margin-top: auto;
 
 }
@@ -522,14 +608,16 @@ img{
 }
 section#redes-cv {
     text-align: center;
+
 }
 
 section#redes-cv img {
-    width: 50px;
+    width: 40px;
     margin: 10px;
     border-radius: 15%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.409);
     box-sizing: border-box;
+
 
 }
 section#redes-cv img:hover {
@@ -541,20 +629,27 @@ section#redes-cv img:hover {
 
 section#redes-sociais {
     text-align: center;
+    background-color:rgb(57, 100, 150) ;
+    padding-top: 08px;
+
+
+
 }
 
 section#redes-sociais img {
-    width: 50px;
-    margin: 10px;
+
+    width: 35px;
+    margin: 3px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.409);
     box-sizing: border-box;
     padding: 0px
 
+
 }
 section#redes-sociais img:hover {
     border: 2px solid white;
-    box-shadow: 5px 5px 10px rgb(38,188,249);
+    box-shadow: 5px 5px 10px rgb(251, 252, 253);
     transition: transform 0.5s;
 }
 #iconeFixo {
@@ -578,89 +673,4 @@ section#redes-sociais img:hover {
 
   .pulsing {
     animation: pulse 2s infinite;
-  }
-
-
-
-
-
-
-
-  @layer demo {
-    fieldset {
-      grid-template-columns:
-        var(--col-1, 1fr)
-        var(--col-2, 1fr)
-        var(--col-3, 1fr)
-        var(--col-4, 1fr)
-        var(--col-5, 1fr)
-      ;
-
-      @media (prefers-reduced-motion: no-preference) {
-        transition: grid-template-columns 2s var(--ease-spring-5);
-      }
-
-      &:has(label:nth-child(1) > input:checked) {
-        --col-1: 5fr;
-        --col-2: 3fr;
-      }
-      &:has(label:nth-child(2) > input:checked) {
-        --col-1: 2fr;
-        --col-2: 5fr;
-        --col-3: 2fr;
-      }
-      &:has(label:nth-child(3) > input:checked) {
-        --col-2: 2fr;
-        --col-3: 5fr;
-        --col-4: 2fr;
-      }
-      &:has(label:nth-child(4) > input:checked) {
-        --col-3: 2fr;
-        --col-4: 5fr;
-        --col-5: 2fr;
-      }
-      &:has(label:nth-child(5) > input:checked) {
-        --col-4: 3fr;
-        --col-5: 5fr;
-      }
-
-      > label {
-        background-image: var(--_img);
-        background-position: center;
-        background-size: auto 125%;
-      }
-    }
-  }
-
-  @layer demo.support {
-    html {
-
-      block-size: 100%;
-    }
-
-
-
-    fieldset {
-      inline-size: a;
-
-      display: grid;
-      grid-auto-flow: column;
-      grid-template-rows: 50vh;
-      gap: var(--size-3);
-      border: none;
-
-      > label {
-        cursor: pointer;
-        border-radius: var(--radius-4);
-
-        &:focus-within {
-          outline: 1px solid rgb(226,25,217);
-          outline-offset: 5px;
-        }
-
-        > input {
-          opacity: 0;
-        }
-      }
-    }
   }

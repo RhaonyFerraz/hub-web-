@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background-color: rgb(74, 73, 73)
+
+}
+
+
+
+
+
+
+
+.slider {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	overflow: hidden;
+
+}
+
+
+.slides{
+	margin-top:0;
+	width: 400%;
+	height: auto; /*antes 400px*/
+	display: flex;
+
+
+}
+
+.slides input {
+	display: none;
+
+}
+
+.slide{
+	width: 25%;
+	position: relative;
+	transition: 2s;
+
+
+
+}
+
+.slide img{
+	width: 100%;  /*antes 800px*/
+	height: auto;   /* esse não tinha*/
+
+}
+
+.manual-navigation{
+	position: absolute;
+	width: 100%;   /*antes 800px*/
+	max-width: 800px; /* esse não tinha*/
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+
+}
+
+
+
+
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+#radio2:checked ~ .first{
+	margin-left: -25%;
+}
+#radio3:checked ~ .first{
+	margin-left: -50%;
+}
+#radio4:checked ~ .first{
+	margin-left: -75%;
+}
+
+
+
+
+
+
+
+
+/* Adicione estilos para telas menores que 768px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+.footer {
+  text-align: center;
+  background-color: #ffffff;
+  color: #020202;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.footer .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links li {
+  margin: 0 10px;
+}
+
+.footer__links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para telas menores que 768px */
+
+
+
+
+
+
+
+
+
+
+section#redes-sociais {
+	text-align: center;
+	margin-top: -60px; /* Experimente ajustar o valor conforme necessário */
+}
