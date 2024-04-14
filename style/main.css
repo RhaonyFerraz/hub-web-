@@ -9,6 +9,15 @@ body{
     overflow-wrap: break-word;
 
 }
+
+.iconeFixo {
+        position: relative;
+        top: 200px; /* Mover 10 pixels para cima */
+        left: 200px; /* Mover 10 pixels para a esquerda */
+    }
+
+
+
 .wrapper{
     width: 100%;
     margin: 0 auto;
