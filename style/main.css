@@ -683,3 +683,37 @@ section#redes-sociais img:hover {
   .pulsing {
     animation: pulse 2s infinite;
   }
+
+
+
+  .slider-container {
+    overflow: hidden; /* Para esconder partes do slider que estão fora do container */
+    height: 400px; /* Altura fixa para limitar a altura do slider */
+    position: relative; /* Para permitir posicionamento absoluto dos slides */
+}
+
+.slider {
+    display: flex; /* Para que os slides fiquem em linha horizontal */
+    transition: transform 0.5s; /* Adiciona uma transição suave ao slider */
+}
+
+.slide {
+    flex: 0 0 100%; /* Faz com que cada slide ocupe toda a largura do container */
+}
+
+/* Regras para controlar a posição vertical dos slides */
+#radio1:checked ~ .slider {
+    transform: translateY(0);
+}
+
+#radio2:checked ~ .slider {
+    transform: translateY(-100%);
+}
+
+#radio3:checked ~ .slider {
+    transform: translateY(-200%);
+}
+
+#radio4:checked ~ .slider {
+    transform: translateY(-300%);
+}
