@@ -686,8 +686,6 @@ section#redes-sociais img:hover {
 
 
 
-
-
   .slider {
     width: 100%;
     height: 400px; /* Ajuste a altura conforme necessário */
@@ -697,12 +695,14 @@ section#redes-sociais img:hover {
 
 .slider .first {
     display: flex;
-    width: 400%; /* Largura total do slider é 4 vezes a largura de cada slide */
+    flex-direction: column; /* Organiza os slides em uma coluna */
+    width: 100%; /* Largura total do slider é igual à largura do contêiner */
     transition: margin 0.5s; /* Adiciona uma transição suave ao mover os slides */
+    margin-top: 0; /* Mantém a margem superior como 0 */
 }
 
 .slider .slide {
-    width: 25%; /* Cada slide ocupa 25% da largura do slider */
+    width: 100%; /* Cada slide ocupa 100% da largura do slider */
 }
 
 #radio1:checked ~ .slider .first {
