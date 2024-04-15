@@ -719,6 +719,20 @@ html, body {
     overflow-x: hidden;
   }
 
-  .my-section .text {
-    margin-left: -20px; /* adjust the value as needed */
+
+
+  .my-section .container {
+    max-width: 800px; /* adjust the value as needed */
+    margin: 0 auto; /* center the container */
+  }
+  @media (max-width: 768px) {
+    .my-section .container p {
+      font-size: 16px; /* adjust the value as needed */
+    }
+  }
+  @media (max-width: 768px) {
+    .my-section .container {
+      max-width: 100%;
+      margin: 0;
+    }
   }
