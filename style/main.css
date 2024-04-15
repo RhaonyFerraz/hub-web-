@@ -72,13 +72,6 @@ section.module.parallax-1{
 
 
 
-
-
-
-
-
-
-
 img{
     max-width: 100%;
 }
@@ -720,3 +713,8 @@ section#redes-sociais img:hover {
 #radio4:checked ~ .slider .first {
     margin-top: -300%;
 }
+
+
+html, body {
+    overflow-x: hidden;
+  }
