@@ -723,7 +723,7 @@ html, body {
 
   .my-section .container {
     max-width: 800px; /* adjust the value as needed */
-    margin: 0 auto; /* center the container */
+    margin: 10px auto; /* center the container */
   }
   @media (max-width: 768px) {
     .my-section .container p {
@@ -733,6 +733,6 @@ html, body {
   @media (max-width: 768px) {
     .my-section .container {
       max-width: 100%;
-      margin: 0;
+      margin: -25px;
     }
   }
