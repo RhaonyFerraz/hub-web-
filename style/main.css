@@ -733,6 +733,6 @@ html, body {
   @media (max-width: 768px) {
     .my-section .container {
       max-width: 100%;
-      margin: -25px;
+      margin: -20px;
     }
   }
