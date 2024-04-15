@@ -718,3 +718,7 @@ section#redes-sociais img:hover {
 html, body {
     overflow-x: hidden;
   }
+
+  .my-section .text {
+    margin-left: -20px; /* adjust the value as needed */
+  }
