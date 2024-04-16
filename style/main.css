@@ -580,6 +580,7 @@ img{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
+        padding: auto;
     }
 
 
@@ -587,6 +588,7 @@ img{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
+        padding: auto;
     }
 
     .last-articles__thumbs{
@@ -739,6 +741,8 @@ html, body {
     margin-top: -40px;
     text-align: left;
     padding-right: 25px;
+    margin-top: -55px;
+    padding-left: 25px;
   }
 
   .my-section2 {
