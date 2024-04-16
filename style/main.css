@@ -746,4 +746,6 @@ html, body {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
   }
