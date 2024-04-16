@@ -1,5 +1,10 @@
 @import "https://unpkg.com/open-props" layer(design.system);
 
+@media (max-width: 1024px) {
+    .header {
+        background-color: #333;
+      }
+    }
 
 body{
     margin: 0;
@@ -62,10 +67,6 @@ section.module.parallax{
 section.module.parallax-1{
     background-image: url(https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
-
-
-
-
 
 
 img{
@@ -355,10 +356,6 @@ img{
 
 
 
-
-
-
-
 }
 
 .hero__btn:hover {
@@ -371,7 +368,7 @@ img{
     flex-direction: column;
 
 
-    text-align: left;
+    text-align:  left;
 }
 
 .people-cards__card:hover .people-cards__avatar img{
@@ -414,6 +411,8 @@ img{
     background: #f8f9f9;
     padding: 20px 0 80px;
     border-top: 1px solid #e3e3e3;
+    text-align: center;
+
 }
 
 .content h3{
@@ -714,18 +713,33 @@ html, body {
 
 
 
-  .my-section .container {
+  .my-section.container {
     max-width: 800px; /* adjust the value as needed */
     margin: 10px auto; /* center the container */
   }
+
   @media (max-width: 768px) {
-    .my-section .container p {
+   .my-section.container p {
       font-size: 16px; /* adjust the value as needed */
     }
   }
+
   @media (max-width: 768px) {
-    .my-section .container {
+   .my-section.container {
       max-width: 100%;
       margin: -20px;
     }
+  }
+
+  .my-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .my-section2 {
+    max-width: 1200px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
   }
