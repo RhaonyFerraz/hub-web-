@@ -720,7 +720,7 @@ html, body {
 
   @media (max-width: 768px) {
    .my-section.container p {
-      font-size: 16px; /* adjust the value as needed */
+      font-size: 14px; /* adjust the value as needed */
     }
   }
 
@@ -734,7 +734,11 @@ html, body {
   .my-section {
     max-width: 1200px;
     margin-left: -25px;
+    text-align-last: auto;
+    font-size: 15px;
+    margin-top: -40px;
     text-align: left;
+    padding-right: 25px;
   }
 
   .my-section2 {
