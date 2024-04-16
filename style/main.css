@@ -64,11 +64,11 @@ section.module.parallax{
 
 }
 
+
+
 section.module.parallax-1{
-    background-image: url(https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url("https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
-
-
 img{
     max-width: 100%;
 }
