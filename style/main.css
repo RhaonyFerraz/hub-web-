@@ -727,14 +727,14 @@ html, body {
   @media (max-width: 768px) {
    .my-section.container {
       max-width: 100%;
-      margin: -20px;
+      margin: -40px;
     }
   }
 
   .my-section {
     max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+    margin-left: -25px;
+    text-align: left;
   }
 
   .my-section2 {
