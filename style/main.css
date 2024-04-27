@@ -365,15 +365,11 @@ img{
     background-color: #7b3773;
 }
 
-
 .people-cards{
     display: flex;
     flex-direction: column;
-
-
     text-align:  left;
 }
-
 
 .people-cards__card:hover .people-cards__title,
 .people-cards__card:hover .people-cards__text{
@@ -384,37 +380,44 @@ img{
     width: 100%;
 }
 
-.people-cards__avatar{
-    margin: -55px auto;
+.people-cards__avatar {
+    margin: -25px auto;/* Ajuste o valor conforme necessário */
     width: 88px;
     height: 88px;
     overflow: hidden;
+    max-height: 100%;
 }
+
+
 .people-cards__content{
     padding-left: 0;
     text-align: center;
     padding: 40px 25px 10px;
     border-left: 1px solid #dbe1e7;
 }
+
 .people-cards__title{
     color: #737c85;
     font-size: 21px;
     font-weight: normal;
 }
+
 .people-cards__text{
     color: #929da5;
     font-size: 14px;
 }
 
-
+.people-cards__card {
+    margin-bottom: 20px; /* Adiciona um espaço entre as cartas */
+}
 
 .content{
     background: #f8f9f9;
     padding: 20px 0 80px;
     border-top: 1px solid #e3e3e3;
     text-align: center;
-
 }
+
 
 .content h3{
     color: #737c85;
