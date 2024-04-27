@@ -151,9 +151,9 @@ img{
 }
 .header__nav li {
     list-style-type: none;
-    background: #7b3773;
+    background: #c4a2f7;
     text-align: center;
-    border-bottom: 1px dotted rgb(0, 0, 0);
+    border-bottom: 1px dotted rgb(255, 255, 255);
 
 
 
