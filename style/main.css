@@ -68,6 +68,9 @@ section.module.parallax{
 
 section.module.parallax-1{
     background-image: url("https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+
+
 }
 img{
     max-width: 100%;
@@ -110,7 +113,7 @@ img{
   }
 
   @keyframes changeColor {
-    0% { background-color: rgba(25, 215, 236, 0.648); }
+    { background-color: rgba(132, 133, 133, 0.648); }   /* Repetição da primeira cor
     5.55% { background-color: rgba(57, 172, 244, 0.799); }
     11.11% { background-color: rgba(100, 135, 239, 0.799); }
     16.66% { background-color: rgba(127, 110, 234, 0.79); }
@@ -127,7 +130,7 @@ img{
     77.77% { background-color: rgba(100, 135, 239, 0.799); }
     83.33% { background-color: rgba(57, 172, 244, 0.799); }
     88.88% { background-color: rgba(25, 215, 236, 0.648); }
-    100% { background-color: rgba(25, 215, 236, 0.648); } /* Repetição da primeira cor */
+    100% { background-color: rgba(25, 215, 236, 0.648); } /* Repetição da primeira cor */  */
   }
 
 
@@ -371,9 +374,7 @@ img{
     text-align:  left;
 }
 
-.people-cards__card:hover .people-cards__avatar img{
-    transform: translateY(-50%);
-}
+
 .people-cards__card:hover .people-cards__title,
 .people-cards__card:hover .people-cards__text{
     color: rgb(0, 0, 0);
